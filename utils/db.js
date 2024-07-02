@@ -27,7 +27,7 @@ class DBClient {
   }
 
   async nbFiles() {
-    const files = this.db.collection('filess');
+    const files = this.db.collection('files');
     const filesNum = await files.countDocuments();
           return filesNum;
   }
